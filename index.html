@@ -13,6 +13,31 @@
     <link rel="stylesheet" href="assets/css/magnific-popup.css" type="text/css" media="all">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800" rel="stylesheet">
+    <!-- Custom Styles for Labels -->
+    <style>
+        .label {
+            background-color: #6c757d; /* Gray color for a professional look */
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 4px;
+            margin: 2px;
+            display: inline-block;
+            font-size: 14px;
+        }
+        /* Optional: Enhance list styling for additional skills */
+        .skills ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        /* Additional styling for Experience sections */
+        .resume-item h3 {
+            margin-top: 10px;
+        }
+        .resume-item ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+    </style>
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -27,7 +52,7 @@
             <div class="line line-2"></div>
             <div class="line line-3"></div>
         </div>
-        <div class="loading-text">╰(◕ᗜ◕)╯</div>
+        <div class="loading-text">Loading...</div>
     </div>
 </div>
 <main class="wrapper">
@@ -38,7 +63,7 @@
             </div>
         </div>
         <div class="avatar">
-            <img src="assets/images/my-pic3.jpg" alt="avatar">
+            <img src="assets/images/my-pic2.jpg" alt="avatar">
         </div>
         <div class="name">
             <h1>János Vasbányai</h1>
@@ -46,9 +71,8 @@
         <div class="social-icons">
             <ul>
                 <li><a href="https://twitter.com/jancseee"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/janos-vasbanyai-20558256"><i class="fa fa-linkedin"
-                                                                                      aria-hidden="true"></i></a></li>
-                <li><a href="mailto: vasbanyai.j@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/janos-vasbanyai-20558256"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a href="mailto:vasbanyai.j@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
             </ul>
         </div>
         <nav class="main-nav">
@@ -64,6 +88,7 @@
         </nav>
     </header>
     <div class="main-content pull-right">
+        <!-- About Me Section -->
         <section id="about" class="about">
             <div class="section-header">
                 <h2>About Me</h2>
@@ -75,6 +100,8 @@
                     and friendly and I'm happy when I see an idea come alive.</p>
             </div>
         </section>
+
+        <!-- Skills Section -->
         <section id="skills" class="skills about">
             <div class="section-header">
                 <h2>Skills</h2>
@@ -83,52 +110,48 @@
                 <div class="row">
                     <div class="col-md-6 col-sm-6 col-xs-12 item">
                         <div class="skill-info clearfix">
-                            <h3 class="pull-left">PHP7</h3>
-                            <span class="pull-right">90%</span>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                                 aria-valuemax="100" style="width:90%; background-color: #8c95c0;">
-                            </div>
+                            <h3 class="pull-left">PHP7-8</h3>
+                            <span class="pull-right">Excellent understanding, used extensively</span>
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-6 col-xs-12 item">
                         <div class="skill-info clearfix">
                             <h3 class="pull-left">MySQL</h3>
-                            <span class="pull-right">70%</span>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                                 aria-valuemin="0" aria-valuemax="100" style="width:70%; background-color: #E48E00;">
-                            </div>
+                            <span class="pull-right">Proficient, regularly utilized</span>
                         </div>
                     </div>
 
                     <div class="col-md-6 col-sm-6 col-xs-12 item">
                         <div class="skill-info clearfix">
                             <h3 class="pull-left">ECMAScript</h3>
-                            <span class="pull-right">69%</span>
+                            <span class="pull-right">Good understanding, frequently applied</span>
                         </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="69"
-                                 aria-valuemin="0" aria-valuemax="100" style="width:69%; background-color: #FDC911;">
-                            </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 col-xs-12 item">
+                        <div class="skill-info clearfix">
+                            <h3 class="pull-left">Python</h3>
+                            <span class="pull-right">Good understanding, frequently applied</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 col-xs-12 item">
+                        <div class="skill-info clearfix">
+                            <h3 class="pull-left">HTML5 & CSS3</h3>
+                            <span class="pull-right">Proficient, consistently implemented</span>
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-6 col-xs-12 item">
                         <div class="skill-info clearfix">
-                            <h3 class="pull-left">HTML5 & CSS3</h3>
-                            <span class="pull-right">70%</span>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                                 aria-valuemin="0" aria-valuemax="100" style="width:70%; background-color: #254BDD;">
-                            </div>
+                            <h3 class="pull-left">ELK Stack</h3>
+                            <span class="pull-right">Familiar with, have tinkered with</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Frameworks Section -->
         <section id="frameworks" class="skills about">
             <div class="section-header">
                 <h2>Frameworks</h2>
@@ -137,184 +160,187 @@
                 <div class="row">
                     <div class="col-md-3 col-sm-3 col-xs-12 item">
                         <div class="skill-info clearfix">
-                            <h3 class="pull-left">CakePHP</h3>
-                            <span class="pull-right">80%</span>
+                            <h3 class="pull-left">Laravel</h3>
+                            <span class="pull-right">Strongest framework, extensive experience</span>
                         </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="80"
-                                 aria-valuemin="0" aria-valuemax="100" style="width:80%; background-color: #8c95c0;">
-                            </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-12 item">
+                        <div class="skill-info clearfix">
+                            <h3 class="pull-left">CakePHP</h3>
+                            <span class="pull-right">Good understanding, used frequently</span>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-12 item">
                         <div class="skill-info clearfix">
                             <h3 class="pull-left">Kohana</h3>
-                            <span class="pull-right">80%</span>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="80"
-                                 aria-valuemin="0" aria-valuemax="100" style="width:80%; background-color: #8c95c0;">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-3 col-xs-12 item">
-                        <div class="skill-info clearfix">
-                            <h3 class="pull-left">Laravel</h3>
-                            <span class="pull-right">65%</span>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="65"
-                                 aria-valuemin="0" aria-valuemax="100" style="width:65%; background-color: #8c95c0;">
-                            </div>
+                            <span class="pull-right">Good understanding, used frequently</span>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-12 item">
                         <div class="skill-info clearfix">
                             <h3 class="pull-left">Symfony</h3>
-                            <span class="pull-right">50%</span>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="50"
-                                 aria-valuemin="0" aria-valuemax="100" style="width:50%; background-color: #8c95c0;">
-                            </div>
+                            <span class="pull-right">Basic understanding, limited use</span>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-3 col-sm-3 col-xs-12 item">
                         <div class="skill-info clearfix">
-                            <h3 class="pull-left">JQuery</h3>
-                            <span class="pull-right">80%</span>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="80"
-                                 aria-valuemin="0" aria-valuemax="100" style="width:80%; background-color: #FDC911;">
-                            </div>
+                            <h3 class="pull-left">jQuery</h3>
+                            <span class="pull-right">Good understanding, used frequently</span>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-12 item">
                         <div class="skill-info clearfix">
                             <h3 class="pull-left">ReactJS</h3>
-                            <span class="pull-right">40%</span>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="40"
-                                 aria-valuemin="0" aria-valuemax="100" style="width:40%; background-color: #FDC911;">
-                            </div>
+                            <span class="pull-right">Basic knowledge, some experience</span>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-12 item">
                         <div class="skill-info clearfix">
                             <h3 class="pull-left">VueJS</h3>
-                            <span class="pull-right">30%</span>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="30"
-                                 aria-valuemin="0" aria-valuemax="100" style="width:30%; background-color: #FDC911;">
-                            </div>
+                            <span class="pull-right">Basic understanding, limited use</span>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-12 item">
                         <div class="skill-info clearfix">
                             <h3 class="pull-left">React Native</h3>
-                            <span class="pull-right">20%</span>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="20"
-                                 aria-valuemin="0" aria-valuemax="100" style="width:20%; background-color: #FDC911;">
-                            </div>
+                            <span class="pull-right">Beginner level, minimal experience</span>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section id="tools" class="tools">
-            <div class="section-header">
-                <h2>Tools</h2>
-            </div>
-            <div class="row">
-                <span class="label" style="background-color: #F42E8E;">PHPStorm</span>
-                <span class="label" style="background-color: #178EE6;">Docker</span>
-                <span class="label" style="background-color: #007BFF;">PHPUnit</span>
-                <span class="label" style="background-color: #2D7F18;">XDebug</span>
-                <span class="label" style="background-color: #E84D31;">Git</span>
-                <span class="label" style="background-color: #F49E25;">GitLab</span>
-                <span class="label" style="background-color: #EAC84F;">Navicat</span>
-                <span class="label" style="background-color: #3E474A;">Bash</span>
-                <span class="label" style="background-color: #2D7F18;">Vim</span>
-                <span class="label" style="background-color: #99BEF7;">Jira</span>
-                <span class="label" style="background-color: #f24d1d;">Figma</span>
-                <span class="label" style="background-color: #f59771;">Zeplin</span>
-                <span class="label" style="background-color: #F49E25;">Selenium</span>
-            </div>
-        </section>
-        <section id="else" class="tools">
-            <div class="section-header">
-                <h2>Touched/tinkered with</h2>
-            </div>
-            <div class="row">
-                <span class="label" style="background-color: #F42E8E;">Python</span>
-                <span class="label" style="background-color: #178EE6;">ABAP</span>
-                <span class="label" style="background-color: #007BFF;">Unity3D</span>
-                <span class="label" style="background-color: #E84D31;">C#/Java</span>
-                <span class="label" style="background-color: #2D7F18;">C/C++</span>
-                <span class="label" style="background-color: #3E474A;">Crypto exchange APIs</span>
-            </div>
-        </section>
-        <section id="experience" class="resume">
-            <div class="section-header">
-                <h2>Experience</h2>
-            </div>
-            <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                    <div class="top-item resume-item">
-                        <h2>Inspired Acoustics</h2>
-                        <span>Fullstack Web Developer  |  2022 - Present</span>
-                        <p>In my current role, I am actively involved in developing an acoustics design SaaS system in collaboration
-                            with acousticians, mathematicians, and researchers. I focus primarily on integration and interface
-                            development to support complex design features. I also configure multiple web servers, work closely with
-                            our sysadmins, and assist in setting up and monitoring systems, including file servers. Additionally, I
-                            manage a Laravel-based web store integrated with a CMS system, handling aspects of custom pricing, tax
-                            management, and creating mobile-friendly UI components, while troubleshooting various PHP applications
-                            as needed.</p>
-                    </div>
-                </div>
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                    <div class="resume-item">
-                        <h2>Webdream Hungary Kft.</h2>
-                        <span>Fullstack web developer  |  2018 - 2021 </span>
-                        <p>My job mainly consisted of fixing and developing PHP applications, but throughout the
-                            projects and tasks I've came into contact with various front-end frameworks as well. </p>
-                    </div>
-                </div>
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                    <div class="resume-item">
-                        <h2>Pixelranger Studio</h2>
-                        <span>Fullstack web developer  |  2014 - 2018</span>
-                        <p>As a member of a small team, I took part in developing numerous web-based solutions for
-                            our clients based on their requirements. These projects ranged from small and basic
-                            websites to more complex systems and webshops.</p>
-                    </div>
-                </div>
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                    <div class="resume-item">
-                        <h2>Personal and Collaborative Projects</h2>
+                <!-- Additional Details for Laravel -->
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="skill-info clearfix">
+                            <h3 class="pull-left">Additional</h3>
+                        </div>
                         <ul>
-                            <li><strong>Telegram Bots for Crypto Markets:</strong> Developed bots to monitor and provide updates on
-                                various cryptocurrency market conditions.
-                            </li>
-                            <li><strong>Grid Trading Bots:</strong> Created automated bots for grid trading strategies.</li>
-                            <li><strong>Real-Time Data Applications:</strong> Built Python applications to deliver real-time
-                                cryptocurrency market data.
-                            </li>
-                            <li><strong>Kommenter.hu:</strong> A unique news aggregator site launched in 2017, still functional but
-                                currently inactive.
-                            </li>
+                            <li>Understanding of Dependency Injection</li>
+                            <li>Experience designing GraphQL servers</li>
+                            <li>Writing asynchronous code in Python and Node.js</li>
+                            <li>Proficient in advanced Laravel concepts and best practices</li>
+                            <li>Basic sysadmin skills</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Tools Section -->
+        <section id="tools" class="tools">
+            <div class="section-header">
+                <h2>Tools</h2>
+            </div>
+            <div class="row">
+                <span class="label">IntelliJ IDEs</span>
+                <span class="label">Docker</span>
+                <span class="label">PHPUnit</span>
+                <span class="label">XDebug</span>
+                <span class="label">Git</span>
+                <span class="label">Bash</span>
+                <span class="label">Vim</span>
+                <span class="label">Jira</span>
+                <span class="label">Figma</span>
+                <span class="label">Zeplin</span>
+                <span class="label">Selenium</span>
+                <span class="label">ELK Stack</span>
+            </div>
+        </section>
+
+        <!-- Touched/tinkered with Section -->
+        <section id="else" class="tools">
+            <div class="section-header">
+                <h2>Touched/tinkered with</h2>
+            </div>
+            <div class="row">
+                <span class="label">ABAP</span>
+                <span class="label">Unity3D</span>
+                <span class="label">C#/Java</span>
+                <span class="label">C/C++</span>
+                <span class="label">Crypto exchange APIs</span>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="resume">
+            <div class="section-header">
+                <h2>Experience</h2>
+            </div>
+            <div class="row">
+                <!-- Inspired Acoustics -->
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="resume-item">
+                        <h2>Inspired Acoustics</h2>
+                        <span>Fullstack Web Developer | 2022 - Present</span>
+                        <p>In my current position, I contribute to the development of an acoustics design SaaS system, collaborating with a multidisciplinary team of acousticians, mathematicians, and researchers. My primary responsibilities include:</p>
+                        <ul>
+                            <li><strong>Core Development & Integration</strong>
+                                <ul>
+                                    <li><strong>Interface & Feature Development:</strong> Design and integrate complex user interfaces to support advanced acoustic modeling and analysis features.</li>
+                                    <li><strong>System Configuration:</strong> Configure and monitor multiple web servers in collaboration with sysadmins, including managing file servers.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Web Store & CMS Management</strong>
+                                <ul>
+                                    <li><strong>E-Commerce Management:</strong> Oversee a Laravel-based web store integrated with a CMS, implementing custom pricing, tax management, and mobile-friendly UI components.</li>
+                                    <li><strong>PHP Troubleshooting:</strong> Provide ongoing support for various PHP applications within the system.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Machine Learning & Docker</strong>
+                                <ul>
+                                    <li><strong>R&D Support:</strong> Set up Docker containers for machine learning algorithms that aid research and development, enhancing system capabilities and overall performance.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Technical Accomplishments</strong>
+                                <ul>
+                                    <li><strong>Codebase Management:</strong> Maintain and deploy scalable, reliable codebases with a track record of durability, predating recent AI advancements.</li>
+                                    <li><strong>Software Delivery Solution:</strong> Developed a browser-based software delivery platform using HTTP and configured UDP channels for real-time telemetry data.</li>
+                                    <li><strong>LLM Integration:</strong> Integrated large language model systems to generate automated notes for ticket management based on our knowledge base.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Webdream Hungary Kft. -->
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="resume-item">
+                        <h2>Webdream Hungary Kft.</h2>
+                        <span>Fullstack Web Developer | 2018 - 2021</span>
+                        <p>My role has centered on developing, maintaining, and enhancing PHP applications, complemented by experience with multiple front-end frameworks.</p>
+                        <ul>
+                            <li><strong>Key Projects & Contributions</strong>
+                                <ul>
+                                    <li><strong>VIP Sector Seating Management System with Ticket-Generation:</strong> Developed and integrated a seating management system for a stadium’s VIP sector, incorporating a ticket-generating system to support seamless seat allocation, event workflows, and customer service efficiency.</li>
+                                    <li><strong>Real-Time IoT Data Processing:</strong> Built a TCP stream-handling PHP application to process real-time data from IoT devices in tractors, ensuring reliable data flow and storage.</li>
+                                    <li><strong>Employer Evaluation Database for Profession.hu:</strong> Designed and implemented a database schema to manage employer “értékelések” (evaluations) for Profession.hu, enhancing the platform's data management and functionality.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Partner Collaboration</strong>
+                                <ul>
+                                    <li><strong>Stakeholder Engagement:</strong> Maintained consistent communication with partners to ensure alignment, smooth project collaboration, and adherence to requirements.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Personal and Collaborative Projects -->
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="resume-item">
+                        <h2>Personal and Collaborative Projects</h2>
+                        <ul>
+                            <li><strong>Telegram Bots for Crypto Markets:</strong> Developed bots to monitor and provide updates on various cryptocurrency market conditions.</li>
+                            <li><strong>Grid Trading Bots:</strong> Created automated bots for grid trading strategies.</li>
+                            <li><strong>Real-Time Data Applications:</strong> Built Python applications to deliver real-time cryptocurrency market data.</li>
+                            <li><strong>Kommenter.hu:</strong> A unique news aggregator site launched in 2017, still functional but currently inactive.</li>
+                            <li><strong>Browser-Based Software Delivery Solution:</strong> Created a software delivery system leveraging HTTP with content-length request headers and configured UDP channels to store telemetry information about running software, enabling real-time monitoring and data analysis.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
         <section id="education" class="resume">
             <div class="section-header">
                 <h2>Education</h2>
@@ -342,6 +368,7 @@
         </section>
     </div>
 </main>
+<!-- Scripts -->
 <script type="text/javascript" src="assets/js/jquery-1.12.3.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.onepage-scroll.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.easing.min.js"></script>
