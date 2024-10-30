@@ -645,7 +645,7 @@ li {
 .resume .resume-item {
     background: #FFF;
     margin-top: 30px;
-    max-height: 140px;
+    /*max-height: 140px;*/
     overflow: hidden;
 }
 
