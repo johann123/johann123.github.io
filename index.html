@@ -97,8 +97,7 @@ section{padding:96px 0}
 .feat li::before{content:"";position:absolute;left:4px;top:19px;width:8px;height:8px;background:var(--pink);transform:rotate(45deg)}
 
 .eng{margin-top:56px}
-.eng h3{font-size:1.9rem;margin-bottom:10px}
-.eng-note{color:var(--mute);margin-bottom:26px;max-width:680px}
+.eng h3{font-size:1.9rem;margin-bottom:28px}
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 @media (max-width:960px){.cards{grid-template-columns:1fr 1fr}}
 @media (max-width:620px){.cards{grid-template-columns:1fr}}
@@ -312,7 +311,6 @@ footer{padding:28px 0 40px;color:var(--mute);text-align:center;font-size:.85rem}
 
     <div class="eng">
       <h3>Under the hood</h3>
-      <p class="eng-note">What Claude built under my direction. I set the goals, asked the questions and checked the results in the headset.</p>
       <div class="cards">
         <div class="card"><span class="mono">Determinism</span><h4>Every run replays bit for bit</h4><p>The simulation is pure TypeScript: <code>step(world, input)</code>, one seeded RNG, no three.js, DOM or clock inside, enforced by tests. Runs are recorded as inputs, so the gameplay video and stills were rendered at 1440p60 from a real headset run, even in a different visual look.</p></div>
         <div class="card"><span class="mono">Performance</span><h4>90 Hz on a mobile chip</h4><p>Instanced crowds, LOD for distant monsters and the floor mirror, a patched three.js for multiview (both eyes in one pass), and a governor that trims effects when frames run late.</p></div>
