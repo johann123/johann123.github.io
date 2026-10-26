@@ -77,57 +77,28 @@ section{padding:96px 0}
 .head .num{color:var(--pink)}
 .head h2{font-size:clamp(2rem,5vw,3.2rem)}
 
-/* ARROWFALL */
-#projects{padding-bottom:0;background:radial-gradient(1200px 600px at 80% 0,rgba(255,61,154,.08),transparent 60%),var(--bg)}
-#projects>.wrap{padding-bottom:96px}
-.af-top{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin-bottom:48px}
-.af-img{width:100%;border-radius:14px;border:1px solid var(--line)}
-@media (max-width:860px){.af-top{grid-template-columns:1fr;gap:24px}}
-.af-title{font-size:clamp(2.4rem,6vw,4rem);letter-spacing:-.04em;background:linear-gradient(90deg,var(--pink),var(--gold) 55%,var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
-.af-sub{font-size:clamp(1.05rem,2vw,1.25rem);max-width:640px;margin:12px 0 24px;color:#d8d4e6}
-.tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+/* skills */
+.focus{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:48px}
+@media (max-width:960px){.focus{grid-template-columns:1fr 1fr}}
+@media (max-width:620px){.focus{grid-template-columns:1fr}}
+.focus div{background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:22px}
+.focus h3{font-size:1.15rem;margin-bottom:8px}
+.focus p{color:var(--mute);font-size:.95rem;margin:0}
+
+/* side projects: short, skills first */
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media (max-width:960px){.projects{grid-template-columns:1fr}}
+.proj{background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:24px;display:flex;flex-direction:column;gap:14px}
+.proj-head{display:flex;align-items:center;gap:14px}
+.proj-head img{width:56px;height:56px;flex:none;border-radius:13px;object-fit:cover;border:1px solid var(--line)}
+.proj h3{font-size:1.35rem}
+.proj h3 a{text-decoration:none}
+.proj h3 a:hover{color:var(--cyan)}
+.proj .what{color:#d0cce0;margin:0}
+.proj ul{margin:0;padding-left:18px;color:var(--mute);font-size:.95rem}
+.proj li{margin:5px 0}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto}
 .tag{border:1px solid var(--line);border-radius:6px;padding:4px 9px;color:var(--mute);font-family:var(--mono);font-size:.74rem}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
-@media (max-width:860px){.two{grid-template-columns:1fr;gap:36px}}
-.role{border-left:3px solid var(--pink);padding:4px 0 4px 22px}
-.role h3{font-size:1.5rem;margin-bottom:14px}
-.role p{color:#d0cce0}
-.feat{list-style:none;padding:0;margin:0;color:#d0cce0}
-.feat li{padding:9px 0 9px 26px;border-bottom:1px dashed var(--line);position:relative}
-.feat li::before{content:"";position:absolute;left:4px;top:19px;width:8px;height:8px;background:var(--pink);transform:rotate(45deg)}
-
-.eng{margin-top:56px}
-.eng h3{font-size:1.9rem;margin-bottom:28px}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-@media (max-width:960px){.cards{grid-template-columns:1fr 1fr}}
-@media (max-width:620px){.cards{grid-template-columns:1fr}}
-.card{background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:24px}
-.card .mono{color:var(--cyan);display:block;margin-bottom:12px}
-.card h4{margin:0 0 10px;font-size:1.15rem;line-height:1.25}
-.card p{color:var(--mute);font-size:.95rem;margin:0}
-
-.links{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
-
-/* attractor.fashion: its own language, paper and ink */
-#attractor{background:var(--paper);color:var(--ink);padding:80px 0}
-#attractor .head .num{color:var(--ink-mute)}
-.status{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:var(--gold);border-radius:999px;padding:6px 14px;margin-bottom:22px}
-.status::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--gold)}
-.at-title{font-size:clamp(2.4rem,7vw,5rem);letter-spacing:-.035em}
-.at-sub{font-size:clamp(1.05rem,2.2vw,1.3rem);color:#3b3742;margin:14px 0 30px;max-width:640px}
-#attractor .feat{color:#35313c}
-#attractor .feat li{border-color:#d8d2c4}
-#attractor .feat li::before{background:var(--ink)}
-.at-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-.at-grid img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px}
-.at-grid img:first-child{grid-column:span 2;grid-row:span 2}
-.honest{margin-top:28px;padding:18px 20px;border:1.5px dashed var(--ink);border-radius:12px;font-size:.98rem;color:#35313c}
-#attractor .btn{background:var(--ink);color:var(--paper);border-color:var(--ink)}
-#attractor .tag{border-color:#cfc8b8;color:#4c4754}
-.at-cards{margin-top:40px}
-#attractor .card{background:#fbf8f2;border-color:#ddd6c6}
-#attractor .card .mono{color:#7a5a12}
-#attractor .card p{color:#4c4754}
 
 /* experience */
 .jobs{border-top:1px solid var(--line)}
@@ -146,7 +117,7 @@ section{padding:96px 0}
 .side b{display:block;margin-bottom:4px}
 .side span{color:var(--mute);font-size:.94rem}
 
-/* skills */
+/* toolbox chips */
 .skills{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:30px}
 .skills h3{font-size:1rem;color:var(--pink);margin-bottom:12px;font-family:var(--mono);font-weight:600;text-transform:uppercase;letter-spacing:.08em}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
@@ -172,19 +143,16 @@ footer{padding:28px 0 40px;color:var(--mute);text-align:center;font-size:.85rem}
 @media print{
   @page{margin:14mm}
   body{background:#fff;color:#000;font-size:10.5pt;line-height:1.45}
-  .nav,.grid,.sun,.af-img,.at-grid,.btns,.links,.contact .btns,footer,.me{display:none!important}
+  .nav,.grid,.sun,.proj-head img,.btns,.contact .btns,footer,.me{display:none!important}
   section,.hero,.contact{padding:14px 0!important;min-height:0!important;background:none!important}
   .hero h1 span{color:#000;-webkit-text-stroke:0}
   .hero h1{font-size:28pt}
-  .af-title,.at-title{font-size:20pt;color:#000;background:none}
   .head{margin-bottom:10px}.head h2{font-size:16pt}
   .lede strong{background:none}
   *{color:#000!important;border-color:#bbb!important;box-shadow:none!important}
-  .card,.side div,.edu div{background:none!important;break-inside:avoid}
+  .focus div,.proj,.side div,.edu div{background:none!important;break-inside:avoid}
   .job{break-inside:avoid;padding:12px 0}
-  .eng{margin-top:20px}
-  #attractor{background:none}
-  .chip,.status,.tag{background:none!important}
+  .chip,.tag{background:none!important}
   .print-only{display:block!important}
 }
 .print-only{display:none}
@@ -195,9 +163,9 @@ footer{padding:28px 0 40px;color:var(--mute);text-align:center;font-size:.85rem}
 <nav class="nav">
   <div class="wrap">
     <b>János Vasbányai</b>
+    <a class="mono opt" href="#skills">Skills</a>
     <a class="mono opt" href="#experience">Experience</a>
     <a class="mono opt" href="#projects">Projects</a>
-    <a class="mono opt" href="#skills">Toolbox</a>
     <a class="mono" href="#contact">Contact</a>
   </div>
 </nav>
@@ -212,7 +180,7 @@ footer{padding:28px 0 40px;color:var(--mute);text-align:center;font-size:.85rem}
       <p class="print-only">vasbanyai.j@gmail.com · linkedin.com/in/janos-vasbanyai-20558256 · johann123.github.io</p>
       <p class="lede">10+ years building <strong>PHP and JavaScript applications</strong>: SaaS platforms, e-commerce and third-party integrations. Symfony and Laravel on the backend, modern JavaScript on the front end, with Docker, automated tests and CI/CD around them. I enjoy seeing an idea come alive, balancing clean code with practical delivery.</p>
       <div class="btns">
-        <a class="btn main" href="#experience">Experience ↓</a>
+        <a class="btn main" href="#skills">Skills ↓</a>
         <a class="btn" href="mailto:vasbanyai.j@gmail.com">vasbanyai.j@gmail.com</a>
         <a class="btn" href="https://www.linkedin.com/in/janos-vasbanyai-20558256">LinkedIn</a>
         <button class="btn" type="button" onclick="window.print()">Print / PDF</button>
@@ -224,9 +192,30 @@ footer{padding:28px 0 40px;color:var(--mute);text-align:center;font-size:.85rem}
 
 <main>
 
+<section id="skills">
+  <div class="wrap">
+    <div class="head"><span class="mono num">01</span><h2>Skills</h2></div>
+    <div class="focus">
+      <div><h3>Backend and APIs</h3><p>PHP 8 with Symfony 7, Laravel and CakePHP: SaaS platform cores, REST APIs, business logic and database schema design on MySQL.</p></div>
+      <div><h3>Integrations</h3><p>Payment systems and third-party APIs, real-time TCP data streams from IoT devices, RSS ingestion, and LLM features built on internal knowledge bases.</p></div>
+      <div><h3>Legacy and performance</h3><p>Refactoring legacy pages and codebases, framework upgrades across major versions, and query and index work on million-row tables.</p></div>
+      <div><h3>DevOps</h3><p>Docker rollouts for local development and deployment, CI/CD pipelines (TeamCity, Bitbucket), web servers and delivery networks.</p></div>
+      <div><h3>Quality</h3><p>Unit tests for every feature (PHPUnit), static analysis (PHPStan), end-to-end tests and code review.</p></div>
+      <div><h3>Frontend</h3><p>Complex JavaScript interfaces, React and Vue, and responsive UI modernisation.</p></div>
+    </div>
+    <div class="skills">
+      <div><h3>Backend</h3><div class="chips"><span class="chip hot">PHP 7–8</span><span class="chip hot">Symfony</span><span class="chip hot">Laravel</span><span class="chip">MySQL</span><span class="chip">CakePHP</span></div></div>
+      <div><h3>Frontend</h3><div class="chips"><span class="chip hot">JavaScript</span><span class="chip">React</span><span class="chip">Vue</span><span class="chip">HTML5 &amp; CSS3</span><span class="chip">jQuery</span></div></div>
+      <div><h3>Testing</h3><div class="chips"><span class="chip">PHPUnit</span><span class="chip">PHPStan</span><span class="chip">Selenium</span></div></div>
+      <div><h3>DevOps &amp; tools</h3><div class="chips"><span class="chip">Docker</span><span class="chip">Git / CI/CD</span><span class="chip">Bash</span><span class="chip">XDebug</span><span class="chip">ELK Stack</span><span class="chip">IntelliJ IDEs</span><span class="chip">Jira</span></div></div>
+      <div><h3>Also</h3><div class="chips"><span class="chip">Python</span><span class="chip">Unity3D</span><span class="chip">Node.js</span><span class="chip">React Native</span><span class="chip">GraphQL</span><span class="chip">C# / Java</span><span class="chip">C / C++</span><span class="chip">Figma / Zeplin</span><span class="chip">AI-assisted development</span></div></div>
+    </div>
+  </div>
+</section>
+
 <section id="experience">
   <div class="wrap">
-    <div class="head"><span class="mono num">01</span><h2>Experience</h2></div>
+    <div class="head"><span class="mono num">02</span><h2>Experience</h2></div>
     <div class="jobs">
       <div class="job">
         <div class="when mono">2025 – 2026<b>Trustindex Kft.</b></div>
@@ -248,9 +237,10 @@ footer{padding:28px 0 40px;color:var(--mute);text-align:center;font-size:.85rem}
           <h3>Full-Stack Web Developer</h3>
           <p>An acoustics design SaaS, built with a team of acousticians, mathematicians and researchers.</p>
           <ul>
+            <li><strong>Browser downloader:</strong> replaced the Electron (rsync-based) desktop downloader with a downloader that runs entirely in the browser, handling 10 GB acoustic room files.</li>
             <li><strong>Core features:</strong> complex user interfaces for acoustic modelling and analysis.</li>
             <li><strong>DevOps:</strong> Docker containers for machine-learning algorithms to speed up R&amp;D; automated deployment pipelines in TeamCity.</li>
-            <li><strong>E-commerce:</strong> scaled and maintained a Laravel web store with a CMS, custom pricing and mobile-friendly UI.</li>
+            <li><strong>E-commerce:</strong> maintained and developed a Laravel web store with a CMS, custom pricing and mobile-friendly UI.</li>
             <li><strong>LLM integration:</strong> automated ticket notes generated from internal knowledge bases.</li>
             <li><strong>Infrastructure:</strong> configured and monitored web servers and file delivery networks with the sysadmins.</li>
           </ul>
@@ -276,110 +266,47 @@ footer{padding:28px 0 40px;color:var(--mute);text-align:center;font-size:.85rem}
 
 <section id="projects">
   <div class="wrap">
-    <div class="head"><span class="mono num">02</span><h2>Side projects</h2></div>
-    <div class="af-top" id="arrowfall">
-      <div>
-    <h3 class="af-title">ARROWFALL</h3>
-    <p class="af-sub">A VR archery roguelite for Meta Quest that runs on the web. Skate on momentum with arm gestures, draw and release a real bow in mid-air, throw black holes into the horde. Solo or two-player online co-op.</p>
-    <div class="tags">
-      <span class="tag">TypeScript</span><span class="tag">Vite</span><span class="tag">three.js</span><span class="tag">WebXR</span><span class="tag">WebRTC</span><span class="tag">Cloudflare Workers</span><span class="tag">Vitest</span>
-    </div>
-      </div>
-      <img class="af-img" src="img/af-horde.webp" loading="lazy" width="1600" height="900" alt="ARROWFALL key art: a horde of monsters">
-    </div>
-
-
-    <div class="two">
-      <div class="role">
-        <div class="mono" style="color:var(--pink);margin-bottom:10px">My role</div>
-        <h3>Product owner, game designer, director.</h3>
-        <p>I built ARROWFALL with Claude (Anthropic's AI) as my coding partner. I set the design, made the look and quality calls, playtested on the headset, and ran the whole Meta store submission: the in-app purchase, the privacy policy for Meta's Data Use Checkup and the store listing.</p>
-        <p>Directing an AI collaborator to ship a complete product, and checking that what it builds is actually right, is the skill this project shows.</p>
-      </div>
-      <div>
-        <div class="mono" style="color:var(--mute);margin-bottom:10px">What shipped</div>
-        <ul class="feat">
-          <li>Live on the <a href="https://www.meta.com/en-gb/experiences/arrowfall/1726931115696976">Meta Horizon Store</a>: free download, Full Game as an in-app purchase, packaged as a Trusted Web Activity APK</li>
-          <li>48 stacking items, 16 monster types plus elites, 3 mini-bosses and a final boss, THE ECLIPSE</li>
-          <li>14 arena looks, each with its own procedural synthwave score</li>
-          <li>DUO: online co-op with Quick Join matchmaking, proximity voice chat, revives and player reporting</li>
-          <li>Meta-progression with unlockable cosmetics; works offline after the first launch</li>
-          <li>Website at <a href="https://arrowfall.lol">arrowfall.lol</a> with landing page, changelog and privacy policy</li>
+    <div class="head"><span class="mono num">03</span><h2>Side projects</h2></div>
+    <div class="projects">
+      <div class="proj">
+        <div class="proj-head"><img src="img/af-cover.webp" loading="lazy" width="56" height="56" alt="">
+        <h3><a href="https://www.meta.com/en-gb/experiences/arrowfall/1726931115696976">ARROWFALL ↗</a></h3></div>
+        <p class="what">A VR archery roguelite for Meta Quest, live on the Meta Horizon Store with online co-op and an in-app purchase. I took it from idea to store as product owner, building it with an AI coding agent.</p>
+        <ul>
+          <li>Defined every feature and decided when it was done, from game design to multiplayer</li>
+          <li>Took it through Meta's store review: listing, in-app purchase, privacy policy and data-use checkup</li>
+          <li>Held the quality bar with 488 automated tests and a headset playtest of every build</li>
         </ul>
+        <div class="tags"><span class="tag">AI-native delivery</span><span class="tag">Product ownership</span><span class="tag">Game design</span><span class="tag">Store release</span></div>
+      </div>
+      <div class="proj">
+        <div class="proj-head"><img src="img/kt-icon.webp" loading="lazy" width="56" height="56" alt="">
+        <h3><a href="https://kommenter.hu/">kommenter.hu ↗</a></h3></div>
+        <p class="what">Hungarian community news reader, running since 2016 and recently modernized and relaunched: news from 50+ sources grouped into stories, with comments and votes.</p>
+        <ul>
+          <li>Articles about the same event from different outlets grouped into one story with one comment thread</li>
+          <li>Threaded comments with markdown and images, votes, following and notifications</li>
+          <li>Personal "For you" feed from chosen topics, detailed search, reader submissions and a weekly newsletter</li>
+        </ul>
+        <div class="tags"><span class="tag">PHP 8.5</span><span class="tag">CakePHP 5</span><span class="tag">MySQL 8.4</span><span class="tag">Docker</span><span class="tag">PHPUnit</span><span class="tag">PHPStan</span></div>
+      </div>
+      <div class="proj">
+        <div class="proj-head"><img src="img/at-1401.webp" loading="lazy" width="56" height="56" alt="">
+        <h3><a href="https://attractor.fashion/">attractor.fashion ↗</a></h3></div>
+        <p class="what">Print-on-demand shop for strange-attractor art: chaos maths turned into posters, tees and hoodies. Built on a custom WooCommerce theme, not open for orders yet.</p>
+        <ul>
+          <li>A collection of 2,360 generated designs, searchable by name or number and filterable by equation family</li>
+          <li>Posters, tees, hoodies and sweatshirts, each printed to order through the Printify API</li>
+          <li>Any design orderable as a poster, with an email list for new designs</li>
+        </ul>
+        <div class="tags"><span class="tag">WordPress</span><span class="tag">WooCommerce</span><span class="tag">PHP</span><span class="tag">Printify API</span></div>
       </div>
     </div>
-
-    <div class="eng">
-      <h3>Under the hood</h3>
-      <div class="cards">
-        <div class="card"><span class="mono">Determinism</span><h4>Every run replays bit for bit</h4><p>The simulation is pure TypeScript: <code>step(world, input)</code>, one seeded RNG, no three.js, DOM or clock inside, enforced by tests. Runs are recorded as inputs, so the gameplay video and stills were rendered at 1440p60 from a real headset run, even in a different visual look.</p></div>
-        <div class="card"><span class="mono">Performance</span><h4>90 Hz on a mobile chip</h4><p>Instanced crowds, LOD for distant monsters and the floor mirror, a patched three.js for multiview (both eyes in one pass), and a governor that trims effects when frames run late.</p></div>
-        <div class="card"><span class="mono">Networking</span><h4>Two players, one world</h4><p>Host-authoritative world, client-authoritative movement. WebRTC carries game data and proximity voice; a Cloudflare Durable Object per room does signalling, with matchmaking and TURN on the same Worker.</p></div>
-        <div class="card"><span class="mono">Input</span><h4>One bow everywhere</h4><p>Input is raw poses (head and both hands) from WebXR, desktop or a bot, so the draw-and-release bow behaves the same for a player, a test and a balance sweep.</p></div>
-        <div class="card"><span class="mono">Testing</span><h4>An emulated headset in the tests</h4><p>488 Vitest tests, seeded bot runs for balance reports, and an end-to-end test that emulates a Quest 3 (IWER), enters VR and drives the controllers through real XR frames.</p></div>
-        <div class="card"><span class="mono">Shipping</span><h4>A website and a store app</h4><p>One codebase serves the browser and the store app: a Trusted Web Activity with a service worker for offline play, entitlement checks for the Full Game unlock, and separate debug and release builds.</p></div>
-      </div>
-
-
-      <div class="links">
-        <a class="btn main" href="https://www.meta.com/en-gb/experiences/arrowfall/1726931115696976">Get it on Meta Quest ↗</a>
-        <a class="btn" href="https://arrowfall.lol">arrowfall.lol ↗</a>
-        <a class="btn" href="https://youtu.be/Yf8Rq9UaaIA">Gameplay video on YouTube ↗</a>
-      </div>
-    </div>
-  </div>
-<div id="attractor">
-  <div class="wrap">
-    <div class="two">
-      <div>
-        <span class="status mono">Demo mode · not open for orders</span>
-        <h2 class="at-title">attractor.fashion</h2>
-        <p class="at-sub">A print-on-demand shop concept for strange-attractor art: chaos maths turned into posters, tees and hoodies.</p>
-        <div class="tags">
-          <span class="tag">WordPress</span><span class="tag">WooCommerce</span><span class="tag">Printify API</span><span class="tag">Custom child theme</span><span class="tag">Generative art</span><span class="tag">Print on demand</span>
-        </div>
-        <p class="honest">Honest status: the shop is a working storefront in demo mode, more a concept than a live business. It takes no orders yet.</p>
-        <div class="links"><a class="btn" href="https://attractor.fashion/">Visit attractor.fashion ↗</a></div>
-      </div>
-      <div class="at-grid">
-        <img src="img/at-1401.webp" loading="lazy" width="640" height="640" alt="Strange attractor #1401, Temperamental Zeta">
-        <img src="img/at-499.webp" loading="lazy" width="640" height="640" alt="Strange attractor #499, Douglas Iota">
-        <img src="img/at-2343.webp" loading="lazy" width="640" height="640" alt="Strange attractor #2343">
-        <img src="img/at-1342.webp" loading="lazy" width="640" height="640" alt="Strange attractor #1342">
-        <img src="img/at-95.webp" loading="lazy" width="640" height="640" alt="Strange attractor #95">
-        <img src="img/at-627.webp" loading="lazy" width="640" height="640" alt="Strange attractor #627">
-      </div>
-    </div>
-    <div class="cards at-cards">
-      <div class="card"><span class="mono">The collection</span><h4>2,360 designs on one page</h4><p>Generated from five families of equations, each attractor with its own name and palette. The whole index ships as compact JSON, so search by name or number, family filters and sorting by number or colour run in the browser.</p></div>
-      <div class="card"><span class="mono">Curation</span><h4>Only what survives fabric</h4><p>65 chosen designs are products, each on a shirt colour it shows on, with a print file made for that garment. Any of the 2,360 can be ordered as a poster.</p></div>
-      <div class="card"><span class="mono">Demand first</span><h4>Notify me, then print</h4><p>Designs not in the shop take an email signup instead of a cart; the ones people ask for get printed first.</p></div>
-      <div class="card"><span class="mono">Fulfilment</span><h4>Print on demand</h4><p>WooCommerce with a custom child theme in front, Printify behind it: nothing in stock, each piece printed after the order by a partner close to the customer.</p></div>
-      <div class="card"><span class="mono">Print test</span><h4>Smooth beat dithering</h4><p>Smooth 300 dpi prints, blue-noise and halftone dots were tested on real shirts. Smooth kept the faintest strands, so that is what the shop prints.</p></div>
-      <div class="card"><span class="mono">Images</span><h4>Rendered ahead of time</h4><p>Every attractor is pre-rendered to WebP at several sizes for fast browsing; the chosen ones are also rendered at full print size so the faintest strands make it onto the cotton.</p></div>
-    </div>
-  </div>
-</div>
-<div class="wrap" style="padding:72px 20px 0">
-    <div class="head" style="margin:0"><h2 style="font-size:1.6rem">Smaller projects</h2></div>
     <div class="side">
       <div><b>Crypto market Telegram bots</b><span>Bots that monitor and broadcast updates on volatile market conditions.</span></div>
       <div><b>Grid trading bots</b><span>Algorithmic bots for automated grid trading strategies.</span></div>
-      <div><b>Real-time data pipelines</b><span>Async Python apps that stream and process live cryptocurrency market data.</span></div>
-      <div><b>Smart bulbs over Telegram</b><span>With Google's Antigravity I cracked my Govee bulbs' Bluetooth LE commands and built a small Python tool for colour, brightness and scenes, so the lights can be set from a Telegram chat.</span></div>
-    </div>
-</div>
-</section>
-
-<section id="skills">
-  <div class="wrap">
-    <div class="head"><span class="mono num">03</span><h2>Toolbox</h2></div>
-    <div class="skills">
-      <div><h3>Backend</h3><div class="chips"><span class="chip hot">PHP 7–8</span><span class="chip hot">Symfony</span><span class="chip hot">Laravel</span><span class="chip">MySQL</span><span class="chip">CakePHP</span></div></div>
-      <div><h3>Frontend</h3><div class="chips"><span class="chip hot">JavaScript</span><span class="chip">React</span><span class="chip">Vue</span><span class="chip">HTML5 &amp; CSS3</span><span class="chip">jQuery</span></div></div>
-      <div><h3>Testing</h3><div class="chips"><span class="chip">PHPUnit</span><span class="chip">Selenium</span></div></div>
-      <div><h3>DevOps &amp; tools</h3><div class="chips"><span class="chip">Docker</span><span class="chip">Git / CI/CD</span><span class="chip">Bash</span><span class="chip">XDebug</span><span class="chip">ELK Stack</span><span class="chip">IntelliJ IDEs</span><span class="chip">Jira</span></div></div>
-      <div><h3>Also</h3><div class="chips"><span class="chip">Python</span><span class="chip">Unity3D</span><span class="chip">Node.js</span><span class="chip">React Native</span><span class="chip">GraphQL</span><span class="chip">C# / Java</span><span class="chip">C / C++</span><span class="chip">Figma / Zeplin</span><span class="chip">AI-assisted development</span></div></div>
+      <div><b>Real-time data pipelines</b><span>Async Python apps that stream and process live market data.</span></div>
+      <div><b>Smart bulbs over Telegram</b><span>Reverse-engineered Bluetooth LE commands for Govee bulbs, controlled from a Telegram chat in Python.</span></div>
     </div>
   </div>
 </section>
@@ -388,7 +315,7 @@ footer{padding:28px 0 40px;color:var(--mute);text-align:center;font-size:.85rem}
   <div class="wrap">
     <div class="head"><span class="mono num">04</span><h2>Education</h2></div>
     <div class="edu">
-      <div><b>Budapest University of Technology and Economics</b><span>Computer Science · 2012 – 2016</span></div>
+      <div><b>Budapest University of Technology and Economics</b><span>Computer Science BSc · 2012 – 2016<br>Studies through the specialisation stage; no degree</span></div>
       <div><b>CDM Vocational High School of Computer Science</b><span>Web Application Developer · 2010 – 2012</span></div>
       <div><b>Bláthy Ottó Titusz Technical High School of Informatics</b><span>2010</span></div>
     </div>
@@ -404,7 +331,6 @@ footer{padding:28px 0 40px;color:var(--mute);text-align:center;font-size:.85rem}
     <div class="btns">
       <a class="btn main" href="mailto:vasbanyai.j@gmail.com">vasbanyai.j@gmail.com</a>
       <a class="btn" href="https://www.linkedin.com/in/janos-vasbanyai-20558256">LinkedIn</a>
-      <a class="btn" href="https://arrowfall.lol">arrowfall.lol</a>
     </div>
   </div>
 </section>
