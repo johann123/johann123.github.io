@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>János Vasbányai — Full-Stack Developer</title>
-<meta name="description" content="János Vasbányai, senior full-stack web developer in Budapest. 10+ years of PHP and JavaScript: SaaS platforms, e-commerce and integrations.">
+<meta name="description" content="János Vasbányai, senior full-stack PHP developer in Budapest, open to work. 10+ years of PHP and JavaScript: Symfony, Laravel, SaaS platforms, e-commerce and integrations.">
 <meta property="og:title" content="János Vasbányai — Full-Stack Developer">
 <meta property="og:description" content="10+ years of PHP and JavaScript: SaaS platforms, e-commerce and integrations.">
 <meta property="og:image" content="https://johann123.github.io/img/af-horde.webp">
@@ -54,7 +54,10 @@ p{margin:0 0 1em}
   background:linear-gradient(var(--gold),var(--pink) 70%);
   -webkit-mask:repeating-linear-gradient(0deg,#000 0 14px,transparent 14px 20px);mask:repeating-linear-gradient(0deg,#000 0 14px,transparent 14px 20px)}
 .hero-in{display:grid;grid-template-columns:1fr 240px;gap:48px;align-items:end}
-.kicker{color:var(--cyan);margin-bottom:22px}
+.kicker{color:var(--cyan);margin-bottom:12px}
+.avail{display:inline-flex;align-items:center;gap:8px;color:#9dffb0;border:1px solid rgba(80,255,130,.35);background:rgba(40,200,90,.1);border-radius:999px;padding:5px 12px;margin-bottom:22px}
+.avail i{width:8px;height:8px;border-radius:50%;background:#4dff88;box-shadow:0 0 8px #4dff88}
+.proj-head .ico{width:56px;height:56px;flex:none;border-radius:13px;border:1px solid var(--line);display:grid;place-items:center;font:600 .8rem var(--mono);color:var(--cyan);background:linear-gradient(135deg,#1a1630,#0d0b16)}
 .hero h1{font-size:clamp(3rem,9vw,7.4rem)}
 .hero h1 span{display:block;color:transparent;-webkit-text-stroke:1.5px var(--text)}
 .lede{max-width:640px;font-size:clamp(1.08rem,2.2vw,1.32rem);color:#d8d4e6;margin:28px 0 30px}
@@ -145,7 +148,7 @@ footer{padding:28px 0 40px;color:var(--mute);text-align:center;font-size:.85rem}
 @media print{
   @page{margin:14mm}
   body{background:#fff;color:#000;font-size:10.5pt;line-height:1.45}
-  .nav,.grid,.sun,.proj-head img,.btns,.contact .btns,footer,.me{display:none!important}
+  .nav,.grid,.sun,.proj-head img,.proj-head .ico,.avail,.btns,.contact .btns,footer,.me{display:none!important}
   section,.hero,.contact{padding:14px 0!important;min-height:0!important;background:none!important}
   .hero h1 span{color:#000;-webkit-text-stroke:0}
   .hero h1{font-size:28pt}
@@ -177,15 +180,18 @@ footer{padding:28px 0 40px;color:var(--mute);text-align:center;font-size:.85rem}
   <div class="sun" aria-hidden="true"></div>
   <div class="wrap hero-in">
     <div>
-      <div class="mono kicker">Senior full-stack web developer · Budapest, Hungary / remote</div>
-      <h1>János<span>Vasbányai</span></h1>
-      <p class="print-only">vasbanyai.j@gmail.com · linkedin.com/in/janos-vasbanyai-20558256 · johann123.github.io</p>
+      <div class="mono kicker">Senior full-stack web developer · Budapest · hybrid or remote</div>
+      <div class="avail mono"><i></i>Open to work · available now</div>
+      <h1>János <span>Vasbányai</span></h1>
+      <p class="print-only">+36 30 488 7184 · vasbanyai.j@gmail.com · github.com/johann123 · linkedin.com/in/janos-vasbanyai-20558256 · johann123.github.io</p>
       <p class="lede">10+ years building <strong>PHP and JavaScript applications</strong>: SaaS platforms, e-commerce and third-party integrations. Symfony and Laravel on the backend, modern JavaScript on the front end, with Docker, automated tests and CI/CD around them. I enjoy seeing an idea come alive, balancing clean code with practical delivery.</p>
       <div class="btns">
-        <a class="btn main" href="#skills">Skills ↓</a>
+        <a class="btn main" href="cv/Vasbanyai_Janos_CV_EN.pdf" download>CV (PDF) ↓</a>
+        <a class="btn" href="cv/Vasbanyai_Janos_oneletrajz_HU.pdf" download>Önéletrajz (HU) ↓</a>
         <a class="btn" href="mailto:vasbanyai.j@gmail.com">vasbanyai.j@gmail.com</a>
+        <a class="btn" href="tel:+36304887184">+36 30 488 7184</a>
         <a class="btn" href="https://www.linkedin.com/in/janos-vasbanyai-20558256">LinkedIn</a>
-        <button class="btn" type="button" onclick="window.print()">Print / PDF</button>
+        <a class="btn" href="https://github.com/johann123">GitHub</a>
       </div>
     </div>
     <img class="me" src="img/me.webp" width="240" height="240" alt="János Vasbányai">
@@ -206,11 +212,11 @@ footer{padding:28px 0 40px;color:var(--mute);text-align:center;font-size:.85rem}
       <div><h3>Frontend</h3><p>Complex JavaScript interfaces, React and Vue, and responsive UI modernisation.</p></div>
     </div>
     <div class="skills">
-      <div><h3>Backend</h3><div class="chips"><span class="chip hot">PHP 7–8</span><span class="chip hot">Symfony</span><span class="chip hot">Laravel</span><span class="chip">MySQL</span><span class="chip">CakePHP</span></div></div>
-      <div><h3>Frontend</h3><div class="chips"><span class="chip hot">JavaScript</span><span class="chip">React</span><span class="chip">Vue</span><span class="chip">HTML5 &amp; CSS3</span><span class="chip">jQuery</span></div></div>
+      <div><h3>Backend stack</h3><div class="chips"><span class="chip hot">PHP 7–8</span><span class="chip hot">Symfony</span><span class="chip hot">Laravel</span><span class="chip">MySQL</span><span class="chip">CakePHP</span></div></div>
+      <div><h3>Frontend stack</h3><div class="chips"><span class="chip hot">JavaScript</span><span class="chip">React</span><span class="chip">Vue</span><span class="chip">HTML5 &amp; CSS3</span><span class="chip">jQuery</span></div></div>
       <div><h3>Testing</h3><div class="chips"><span class="chip">PHPUnit</span><span class="chip">PHPStan</span><span class="chip">Selenium</span></div></div>
       <div><h3>DevOps &amp; tools</h3><div class="chips"><span class="chip">Docker</span><span class="chip">Git / CI/CD</span><span class="chip">Bash</span><span class="chip">XDebug</span><span class="chip">ELK Stack</span><span class="chip">IntelliJ IDEs</span><span class="chip">Jira</span></div></div>
-      <div><h3>Also</h3><div class="chips"><span class="chip">Python</span><span class="chip">Unity3D</span><span class="chip">Node.js</span><span class="chip">React Native</span><span class="chip">GraphQL</span><span class="chip">C# / Java</span><span class="chip">C / C++</span><span class="chip">Figma / Zeplin</span><span class="chip">AI-assisted development</span></div></div>
+      <div><h3>Also worked with</h3><div class="chips"><span class="chip">Python</span><span class="chip">Unity3D</span><span class="chip">Node.js</span><span class="chip">React Native</span><span class="chip">GraphQL</span><span class="chip">C# / Java</span><span class="chip">C / C++</span><span class="chip">Figma / Zeplin</span><span class="chip">AI-assisted development</span></div></div>
     </div>
   </div>
 </section>
@@ -272,7 +278,7 @@ footer{padding:28px 0 40px;color:var(--mute);text-align:center;font-size:.85rem}
     <div class="head"><span class="mono num">03</span><h2>Side projects</h2></div>
     <div class="projects">
       <div class="proj">
-        <div class="proj-head"><img src="img/af-cover.webp" loading="lazy" width="56" height="56" alt="">
+        <div class="proj-head"><img src="img/af-cover.webp" loading="lazy" width="56" height="56" alt="ARROWFALL cover art">
         <h3><a href="https://www.meta.com/en-gb/experiences/arrowfall/1726931115696976">ARROWFALL ↗</a></h3></div>
         <p class="what">A VR archery roguelite for Meta Quest, live on the Meta Horizon Store with online co-op and an in-app purchase. I took it from idea to store as product owner, building it with an AI coding agent.</p>
         <ul>
@@ -283,7 +289,7 @@ footer{padding:28px 0 40px;color:var(--mute);text-align:center;font-size:.85rem}
         <div class="tags"><span class="tag">AI-native delivery</span><span class="tag">Product ownership</span><span class="tag">Game design</span><span class="tag">Store release</span></div>
       </div>
       <div class="proj">
-        <div class="proj-head"><img src="img/kt-icon.webp" loading="lazy" width="56" height="56" alt="">
+        <div class="proj-head"><img src="img/kt-icon.webp" loading="lazy" width="56" height="56" alt="kommenter.hu logo">
         <h3><a href="https://kommenter.hu/">kommenter.hu ↗</a></h3></div>
         <p class="what">Hungarian community news reader, running since 2016 and recently modernized and relaunched: news from 50+ sources grouped into stories, with comments and votes.</p>
         <ul>
@@ -294,23 +300,20 @@ footer{padding:28px 0 40px;color:var(--mute);text-align:center;font-size:.85rem}
         <div class="tags"><span class="tag">PHP 8.5</span><span class="tag">CakePHP 5</span><span class="tag">MySQL 8.4</span><span class="tag">Docker</span><span class="tag">PHPUnit</span><span class="tag">PHPStan</span></div>
       </div>
       <div class="proj">
-        <div class="proj-head"><img src="img/at-1401.webp" loading="lazy" width="56" height="56" alt="">
-        <h3><a href="https://attractor.fashion/">attractor.fashion ↗</a></h3></div>
-        <p class="what">Print-on-demand shop for strange-attractor art: chaos maths turned into posters, tees and hoodies. Built on a custom WooCommerce theme, not open for orders yet.</p>
+        <div class="proj-head"><div class="ico" aria-hidden="true">MCP</div>
+        <h3>ksh-mcp</h3></div>
+        <p class="what">An MCP server that gives AI assistants the ~1,600 statistics tables of the Hungarian Central Statistical Office, in Hungarian and English.</p>
         <ul>
-          <li>A collection of 2,360 generated designs, searchable by name or number and filterable by equation family</li>
-          <li>Posters, tees, hoodies and sweatshirts, each printed to order through the Printify API</li>
-          <li>Any design orderable as a poster, with an email list for new designs</li>
+          <li>Search across the whole STADAT catalogue, then read any table as clean, structured data</li>
+          <li>CSV ingestion and normalisation of the office's table formats</li>
+          <li>Covered by PHPUnit tests; runs as a connector in Claude</li>
         </ul>
-        <div class="tags"><span class="tag">WordPress</span><span class="tag">WooCommerce</span><span class="tag">PHP</span><span class="tag">Printify API</span></div>
+        <div class="tags"><span class="tag">PHP</span><span class="tag">MCP</span><span class="tag">AI tooling</span><span class="tag">PHPUnit</span></div>
       </div>
     </div>
     <div class="side">
-      <div><b>Crypto market Telegram bots</b><span>Bots that monitor and broadcast updates on volatile market conditions.</span></div>
-      <div><b>Grid trading bots</b><span>Algorithmic bots for automated grid trading strategies.</span></div>
-      <div><b>Real-time data pipelines</b><span>Async Python apps that stream and process live market data.</span></div>
       <div><b><a href="https://github.com/johann123/h600d-lights">H600D lights ↗</a></b><span>Open-source Windows app and CLI for my Govee bulbs over Bluetooth LE: groups, scenes and 29 smooth effects that start in sync. I decoded the scene format from the phone app's Bluetooth log; built with Claude Code.</span></div>
-      <div><b>ksh-mcp</b><span>An MCP server that gives AI assistants the ~1,600 statistics tables of the Hungarian Central Statistical Office, in Hungarian and English.</span></div>
+      <div><b>Real-time data pipelines</b><span>Async Python apps that stream and process live data feeds.</span></div>
     </div>
   </div>
 </section>
@@ -319,7 +322,7 @@ footer{padding:28px 0 40px;color:var(--mute);text-align:center;font-size:.85rem}
   <div class="wrap">
     <div class="head"><span class="mono num">04</span><h2>Education</h2></div>
     <div class="edu">
-      <div><b>Budapest University of Technology and Economics</b><span>Computer Science BSc, Enterprise Information Systems specialisation · 2012 – 2016<br>Studies through the specialisation stage; no degree</span></div>
+      <div><b>Budapest University of Technology and Economics</b><span>Computer Science BSc, Enterprise Information Systems specialisation · 2012 – 2016<br>Studies completed through the specialisation stage</span></div>
       <div><b>CDM Vocational High School of Computer Science</b><span>Web Application Developer · 2010 – 2012</span></div>
       <div><b>Bláthy Ottó Titusz Technical High School of Informatics</b><span>2010</span></div>
     </div>
@@ -330,11 +333,14 @@ footer{padding:28px 0 40px;color:var(--mute);text-align:center;font-size:.85rem}
 
 <section class="contact" id="contact">
   <div class="wrap">
-    <div class="mono" style="color:var(--cyan);margin-bottom:16px">Budapest, Hungary · open to remote</div>
+    <div class="mono" style="color:var(--cyan);margin-bottom:16px">Budapest, Hungary · hybrid or remote · available now</div>
     <h2>Let's build something.</h2>
     <div class="btns">
       <a class="btn main" href="mailto:vasbanyai.j@gmail.com">vasbanyai.j@gmail.com</a>
+      <a class="btn" href="tel:+36304887184">+36 30 488 7184</a>
       <a class="btn" href="https://www.linkedin.com/in/janos-vasbanyai-20558256">LinkedIn</a>
+      <a class="btn" href="https://github.com/johann123">GitHub</a>
+      <a class="btn" href="cv/Vasbanyai_Janos_CV_EN.pdf" download>CV (PDF) ↓</a>
     </div>
   </div>
 </section>
