@@ -280,13 +280,14 @@ footer{padding:28px 0 40px;color:var(--mute);text-align:center;font-size:.85rem}
       <div class="proj">
         <div class="proj-head"><img src="img/af-cover.webp" loading="lazy" width="56" height="56" alt="ARROWFALL cover art">
         <h3><a href="https://www.meta.com/en-gb/experiences/arrowfall/1726931115696976">ARROWFALL ↗</a></h3></div>
-        <p class="what">A VR archery roguelite for Meta Quest, live on the Meta Horizon Store with online co-op and an in-app purchase. I took it from idea to store as product owner, building it with an AI coding agent.</p>
+        <p class="what">A VR archery roguelite for Meta Quest, built for the web with WebXR and live on the Meta Horizon Store, with online co-op and an in-app purchase.</p>
         <ul>
-          <li>Defined every feature and decided when it was done, from game design to multiplayer</li>
-          <li>Took it through Meta's store review: listing, in-app purchase, privacy policy and data-use checkup</li>
-          <li>Held the quality bar with 488 automated tests and a headset playtest of every build</li>
+          <li>Deterministic game simulation in pure TypeScript, kept apart from three.js rendering and WebXR input</li>
+          <li>Online co-op through a Cloudflare Worker relay with a Durable Object per room, plus matchmaking</li>
+          <li>Unit tests with Vitest, headless WebXR end-to-end runs with Playwright and IWER, and performance tuned to hold frame rate on Quest 3</li>
+          <li>Shipped as a Trusted Web Activity APK; deploys go out through Cloudflare on every push</li>
         </ul>
-        <div class="tags"><span class="tag">AI-native delivery</span><span class="tag">Product ownership</span><span class="tag">Game design</span><span class="tag">Store release</span></div>
+        <div class="tags"><span class="tag">TypeScript</span><span class="tag">three.js</span><span class="tag">WebXR</span><span class="tag">Vite</span><span class="tag">Vitest</span><span class="tag">Playwright</span><span class="tag">Cloudflare Workers</span><span class="tag">Claude Code</span></div>
       </div>
       <div class="proj">
         <div class="proj-head"><img src="img/kt-icon.webp" loading="lazy" width="56" height="56" alt="kommenter.hu logo">
@@ -301,8 +302,8 @@ footer{padding:28px 0 40px;color:var(--mute);text-align:center;font-size:.85rem}
       </div>
       <div class="proj">
         <div class="proj-head"><div class="ico" aria-hidden="true">MCP</div>
-        <h3>ksh-mcp</h3></div>
-        <p class="what">An MCP server that gives AI assistants the ~1,600 statistics tables of the Hungarian Central Statistical Office, in Hungarian and English.</p>
+        <h3><a href="https://github.com/johann123/ksh-mcp">ksh-mcp ↗</a></h3></div>
+        <p class="what">Open-source MCP server that gives AI assistants the ~1,600 statistics tables of the Hungarian Central Statistical Office, in Hungarian and English.</p>
         <ul>
           <li>Search across the whole STADAT catalogue, then read any table as clean, structured data</li>
           <li>CSV ingestion and normalisation of the office's table formats</li>
