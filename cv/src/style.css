@@ -13,3 +13,4 @@ ul{margin:0;padding-left:5.5mm}
 li{margin:.5mm 0}
 .job{display:flex;justify-content:space-between;margin-top:1.6mm}
 .job span{color:#666}
+a{color:inherit;text-decoration:none}
