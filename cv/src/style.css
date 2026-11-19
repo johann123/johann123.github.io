@@ -1,0 +1,15 @@
+@page{size:A4;margin:0}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Segoe UI",system-ui,sans-serif;color:#222;font-size:10pt;line-height:1.34}
+.page{width:210mm;min-height:297mm;padding:10mm 14mm 6mm}
+header{display:flex;gap:6mm;align-items:center;padding-bottom:3.5mm;border-bottom:2px solid #1f4e79;margin-bottom:2mm}
+header img{width:24mm;height:24mm;object-fit:cover;border-radius:3mm}
+h1{margin:0;color:#1f4e79;font-size:22pt;line-height:1.1;font-weight:700}
+.role{color:#555;font-size:11.4pt;margin:.6mm 0}
+.contact{color:#555;font-size:9.4pt}
+h2{color:#1f4e79;font-size:11.4pt;letter-spacing:.04em;text-transform:uppercase;margin:3mm 0 1mm}
+p{margin:0}
+ul{margin:0;padding-left:5.5mm}
+li{margin:.5mm 0}
+.job{display:flex;justify-content:space-between;margin-top:1.6mm}
+.job span{color:#666}
